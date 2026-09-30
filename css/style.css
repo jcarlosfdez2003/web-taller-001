@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #111827;
+    color: white;
+    padding: 20px;
+
+    .header-container {
+        max-width: 1200px;
+        /* El contenido no crecera mas de esto a pesar el tamaño de la pantalla */
+        width: 100%;
+        /* En pantallas pequeñas puede utilizar todo el espacio disponible */
+        margin: 0 auto;
+        /* Centra el contenedor horizontalmente */
+
+        display: flex;
+        justify-content: space-between;
+        /* Separa los elementos dejando el espacio disponible entre ellos */
+        align-items: center;
+        /* Los centra verticalmente */
+    }
+}
+
+header h1 {
+    margin: 0;
+    /* Margen superior */
+}
+
+header a {
+    color: white;
+    /* Enlaces blancos */
+    text-decoration: none;
+    /* Eliminar subrayado */
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    /* Coloca los elementos en horizontal */
+    gap: 30px;
+    /* Seperacion entre elementos */
+    list-style: none;
+    /* Quita los puntos de la lista */
+    padding: 0;
+    /* Quita el espacio interior de la lista */
+    margin: 0;
+    /* Quita el margen exterior de la lista */
+}
+
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    display: inline-block;
+    /* Hace el boton un bloque */
+    background-color: #2563eb;
+    /* Color del fondo */
+    color: white;
+    /* Color de las letras */
+    padding: 14px 28px;
+    /* Espacio al interior */
+    text-decoration: none;
+    /* Quitamos el subrayado */
+    border-radius: 8px;
+    /* Redondea las esquinas */
+    transition: background-color 0.3s ease;
+}
+
+/* Cuando el ratón esta encima */
+.hero a:hover {
+    background-color: #1d4ed8;
+}
+
+/* Servicios */
+
+.services {
+    padding: 80px 20px;
+    /* Espacio interior de la sección */
+}
+
+.services-container {
+    display: flex;
+    /* Coloca los elementos en fila */
+    gap: 30px;
+    /* Espacio entre cada servicio */
+}
+
+.services-container article {
+    flex: 1;
+    /* Para que las cartas ocupen igual */
+    padding: 30px;
+    /* Espacio interior de la tarjeta */
+    background-color: #f3f4f6;
+    /* Fondo gris claro */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+.services>h2 {
+    text-align: center;
+    /* Centra el texto */
+    margin-bottom: 40px;
+    /* Espacio debajo del titulo antes de las tarjetas */
+}
+
+.services-container article h3 {
+    font-size: 24px;
+    /* Hace el nombre del servicio mas grande */
+    margin-top: 0;
+    /* Quitamos el margen superior que el navegador pone por defecto */
+    margin-bottom: 15px;
+    /* Dejamos separacion entre el titulo y la descripción */
+}
+
+.services-container article p {
+    font-size: 16px;
+    /* Tamaño normal del texto */
+    line-height: 1.6;
+    /* Aumenta el espacio entre las líneas de texto */
+    margin: 0;
+    /* Quitamos el margen que trae el <p> por defecto */
+}
